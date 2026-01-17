@@ -1,0 +1,16 @@
+.navbar {
+    @apply bg-slate-900 text-white px-6 py-4 flex justify-between items-center;
+}
+
+.navbar-logo {
+    @apply text-xl font-bold text-red-400;
+
+}
+
+.navbar-links {
+    @apply flex gap-40 text-sm font-medium;
+}
+
+.navbar-link {
+    @apply hover:text-red-400 transition duration-300;
+}
