@@ -4,7 +4,7 @@ const Skills = () => {
   const [skills, setSkills] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/portfolio')
+    fetch('https://maloji-portfolio-backend.onrender.com/api/portfolio')
       .then(res => res.json())
       .then(data => setSkills(data.skills || []))
       .catch(err => console.error('Error fetching skills:', err));

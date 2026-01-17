@@ -4,7 +4,7 @@ const About = () => {
   const [portfolioData, setPortfolioData] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/portfolio')
+    fetch('https://maloji-portfolio-backend.onrender.com/api/portfolio')
       .then(res => res.json())
       .then(data => setPortfolioData(data))
       .catch(err => console.error('Error fetching portfolio:', err));
